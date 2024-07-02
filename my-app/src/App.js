@@ -1,22 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import RepositoryInput from "./components/RepositoryInput.js";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <RepositoryInput />
+        <div style={{ display: "flex", flexDirection: "row" }}>
+          <p style={{ color: "#4dff4d", fontFamily: "system-ui", margin: 0 }}>
+            존재하는 Repository입니다.
+          </p>
+          <p style={{ color: "#ff4d4d", fontFamily: "system-ui", margin: 0 }}>
+            존재하지 않는 Repository입니다.
+          </p>
+        </div>
       </header>
     </div>
   );
