@@ -1,5 +1,6 @@
 import "./App.css";
 import RepositoryInput from "./components/RepositoryInput.js";
+import Button from "./components/Button.js";
 
 function App() {
   return (
@@ -14,7 +15,11 @@ function App() {
             존재하지 않는 Repository입니다.
           </p>
         </div>
+        <div>
+          <Button text={"Button"} onClick={() => window.alert("클릭")} />
+        </div>
       </header>
+      <body></body>
     </div>
   );
 }
